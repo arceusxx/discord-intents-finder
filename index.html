@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Discord Bot Intents Finder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Intents Finder</h1>
+    </header>
+    <div class="container">
+      <p>Identify the intents your bot needs by answering the following questions.</p>
+      <form id="intents-form">
+        <label for="question1">Does your bot receive status update events such as when a user's online status changes ?</label>
+        <select id="question1" name="question1">
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+        </select><br><br>
+        <label for="question2">Is it necessary for your bot to receive notifications about member activity such as joining or leaving a server, or when a member updates their profile ?</label>
+        <select id="question2" name="question2">
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+        </select><br><br>
+        <label for="question3">Is it necessary for your bot to have the ability to read users' messages, as well as embedded content or attachments ?</label>
+        <select id="question3" name="question3">
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+        </select><br><br>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="intents">
+        <h2></h2>
+        <ul id="intents-list"></ul>
+      </div>
+      <footer>
+        <p>made with ❤️ by arceus.</p>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
